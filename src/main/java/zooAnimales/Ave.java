@@ -15,9 +15,14 @@ public class Ave extends Animal {
 
         super(nombre,edad,habitat,genero);
         this.colorPlumas=colorPlumas;
+        listado.add(this);
+        Animal.totalAnimales(this);
     }
 
     public Ave(){
+
+        listado.add(this);
+        Animal.totalAnimales(this);
 
     }
 

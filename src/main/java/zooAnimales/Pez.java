@@ -17,10 +17,13 @@ public class Pez extends Animal{
         super(nombre,edad,habitat,genero);
         this.colorEscamas=colorEscamas;
         this.cantidadAletas=cantidadAletas;
+        listado.add(this);
+        Animal.totalAnimales(this);
     }
 
     public Pez(){
-
+        listado.add(this);
+        Animal.totalAnimales(this);
     }
 
     public String getColorEscamas(){

@@ -17,10 +17,13 @@ public class Anfibio extends Animal{
         super(nombre,edad,habitat,genero);
         this.colorPiel=colorPiel;
         this.venenoso=venenoso;
+        listado.add(this);
+        Animal.totalAnimales(this);
     }
 
     public Anfibio(){
-
+        listado.add(this);
+        Animal.totalAnimales(this);
     }
 
     public String getColorPiel(){

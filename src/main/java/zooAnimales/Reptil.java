@@ -17,11 +17,14 @@ public class Reptil extends Animal {
         super(nombre,edad,habitat,genero);
         this.colorEscamas=colorEscamas;
         this.largoCola=largoCola;
+        listado.add(this);
+        Animal.totalAnimales(this);
 
     }
 
     public Reptil(){
-
+        listado.add(this);
+        Animal.totalAnimales(this);
     }
 
     public String getColorEscamas(){

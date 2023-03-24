@@ -11,7 +11,7 @@ public class Animal {
     private int edad;
     private String habitat;
     private String genero;
-    private ArrayList<Zona> zona;
+    private Zona zona;
     private static int m, p, r, a, an;
 
     public Animal(String nombre, int edad, String habitat, String genero){
@@ -110,8 +110,9 @@ public class Animal {
     }
 
     public String toString(){
+        
+        return zona==null?"Mi nombre es " + nombre + ", tengo una edad de " + edad + ", habito en " + habitat + " y mi genero es " + genero:"Mi nombre es " + nombre + ", tengo una edad de " + edad + ", habito en " + habitat + " y mi genero es " + genero + 
+        ", la zona en la que me ubico es " + zona.getNombre() + ", en el " + zona.getZoo();
 
-        return "Mi nombre es "+nombre+"tengo una edad de "+edad+", habitoen "+habitat+" y mi genero es "+genero+", la zona en la que me ubico es"
-        +zona+" en el "+"#zoo";
     }
 }
